@@ -35,7 +35,12 @@ public class User {
         }
 
     }
-
+    public boolean isNewUser() {
+        // Logic to determine if the user is new
+        // This could involve checking a database or a configuration file
+        // For now, we'll assume the user is new if they have no name set
+        return this.name == null || this.name.isEmpty();
+    }
     public void setPassword(String password) {
         this.password = password;
     }
